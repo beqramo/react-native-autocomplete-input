@@ -12,13 +12,13 @@ Tested with RN >= 0.26.2. If you want to use RN < 0.26 try to install react-nati
 ### Installation
 
 ```shell
-$ npm install --save react-native-autocomplete-input
+$ npm install --save react-native-autocomplete-input react-native-gesture-handler
 ```
 
 or install HEAD from github.com:
 
 ```shell
-$ npm install --save mrlaessig/react-native-autocomplete-input
+$ npm install --save mrlaessig/react-native-autocomplete-input react-native-gesture-handler
 ```
 
 ### Example
