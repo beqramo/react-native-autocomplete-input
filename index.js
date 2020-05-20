@@ -5,7 +5,8 @@ import {
   StyleSheet,
   Text,
   View,
-  ViewPropTypes as RNViewPropTypes
+  ViewPropTypes as RNViewPropTypes,
+  TouchableWithoutFeedback
 } from 'react-native';
 import {FlatList,TextInput} from 'react-native-gesture-handler'
 
@@ -86,7 +87,7 @@ class Autocomplete extends Component {
     onStartShouldSetResponderCapture: () => false,
     renderItem: ({ item }) => <Text>{item}</Text>,
     renderSeparator: null,
-    renderTextInput: props => <TextInput {...props} />,
+    renderTextInput: props => <TextInput hitSlop={{top:30,bottom:50}} {...props} />,
     flatListProps: {}
   };
 
@@ -202,7 +203,10 @@ class Autocomplete extends Component {
             style={listContainerStyle}
             onStartShouldSetResponderCapture={onStartShouldSetResponderCapture}
           >
+            <TouchableWithoutFeedback>
             {showResults && this.renderResultList()}
+            
+            </TouchableWithoutFeedback>
           </View>
         )}
       </View>
