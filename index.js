@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  FlatList,
   Platform,
   StyleSheet,
   Text,
-  TextInput,
   View,
   ViewPropTypes as RNViewPropTypes
 } from 'react-native';
+import {FlatList,TextInput} from 'react-native-gesture-handler'
 
 // Keep this line for downwards compatibility with RN.
 // eslint-disable-next-line react/forbid-foreign-prop-types
